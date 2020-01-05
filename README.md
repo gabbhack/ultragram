@@ -1,1 +1,2 @@
-Ultragram - ultra fast Telegram Bot API library for development large and scalable bots.
+Ultragram - is ultra fast Telegram Bot API library for development both large and scalable bots.
+
