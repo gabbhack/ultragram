@@ -11,9 +11,8 @@ class RabbitMQReceiver(AbstractReceiver):
         filtered_updates = self.filter_updates(updates)
         return filtered_updates
 
-    async def main(self):
-        while True:
-            for upd in (await self.get_updates()):
-                yield upd
+    async def receive(self):
+        for upd in (await self.get_updates()):
+            yield upd
 ```
 
