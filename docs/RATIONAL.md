@@ -7,7 +7,7 @@ It's possible because ultragram provides a simple abstraction over updates recei
 ```py
 class RabbitMQReceiver(AbstractReceiver):
     async def get_updates(self):
-        updates = self.rabbitmq.get_updates()
+        updates = await self.rabbitmq.get_updates()
         filtered_updates = self.filter_updates(updates)
         return filtered_updates
 
